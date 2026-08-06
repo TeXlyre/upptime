@@ -90,8 +90,6 @@ status-website:
     - title: GitHub
       href: https://github.com/texlyre
 
-assignees:
-  - <your-github-username>
 delay: 2000
 
 workflowSchedule:
