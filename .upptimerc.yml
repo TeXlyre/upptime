@@ -1,84 +1,76 @@
 owner: texlyre
 repo: upptime
-
+user-agent: texlyre
 sites:
   - name: TeXlyre Home Page (GitHub Pages redirect)
     url: https://texlyre.org/
     icon: https://texlyre.org/assets/images/TeXlyre_notext_192.png
-    slug: texlyre-app
+    slug: texlyre-org
     maxResponseTime: 5000
-
   - name: TeXlyre App (GitHub Pages)
     url: https://texlyre.github.io/texlyre/
-    slug: texlyre-pages
+    slug: texlyre-app
     maxResponseTime: 5000
-
   - name: Templates API (GitHub Pages)
     url: https://texlyre.github.io/texlyre-templates/api/templates.json
     slug: templates-api
     expectedStatusCodes:
       - 200
     maxResponseTime: 5000
-
   - name: Chelys Recipes (GitHub Pages)
     url: https://texlyre.github.io/chelys-recipes
     slug: chelys-recipes
     expectedStatusCodes:
       - 200
     maxResponseTime: 5000
-    
+
   - name: TeX Live Endpoint
-    url: https://texlive.texlyre.org/
+    url: https://texlive.texlyre.org/pdftex/26/article.cls
     slug: texlive
+    method: HEAD
     expectedStatusCodes:
       - 200
-      - 301
-      - 302
-      - 403
-      - 404
+    maxResponseTime: 10000
+  - name: BusyTeX Endpoint (TeX Live 2026)
+    url: https://texlive2026.texlyre.org/26/article.cls
+    slug: texlive2026
+    method: HEAD
+    expectedStatusCodes:
+      - 200
     maxResponseTime: 10000
 
-  - name: BusyTeX Endpoint (TeX Live 2026)
-    url: https://texlive2026.texlyre.org/
-    slug: texlive2026
-    expectedStatusCodes:
-      - 200
-      - 301
-      - 302
-      - 403
-      - 404
-    maxResponseTime: 10000
-    
   - name: Repository Proxy
     url: https://proxy.texlyre.org/?url=https%3A%2F%2Ftexlyre.org%2F
     slug: repository-proxy
+    headers:
+      - "User-Agent: Upptime (+https://texlyre.org/upptime)"
     expectedStatusCodes:
       - 200
     maxResponseTime: 10000
-
   - name: File Sync (FilePizza)
     url: https://filepizza.texlyre.org/
     slug: filepizza
     maxResponseTime: 8000
-
-  - name: File Sync Signaling (FilePizza-PeerJs)
-    url: https://peerjs.texlyre.org/
-    slug: filepizza
+  - name: File Sync Signaling (FilePizza-PeerJS)
+    url: https://peerjs.texlyre.org/texlyre
+    slug: filepizza-signaling
+    expectedStatusCodes:
+      - 200
+    __dangerous__body_down_if_text_missing: '"name":"PeerJS Server"'
     maxResponseTime: 8000
-    
+
   - name: Collaboration Signaling (y-webrtc)
-    url: wss://ywebrtc.texlyre.org
-    check: ws
+    url: https://ywebrtc.texlyre.org/
     slug: ywebrtc-signaling
+    expectedStatusCodes:
+      - 200
     maxResponseTime: 8000
-
   - name: Typst (external dependency)
     url: https://typst.org/
     slug: typst
     maxResponseTime: 8000
-
 status-website:
-  cname: texlyre.org/upptime
+  baseUrl: /upptime
   name: TeXlyre Status
   introTitle: TeXlyre Status
   introMessage: Uptime and response times for texlyre.org and its hosted services.
@@ -92,12 +84,9 @@ status-website:
       href: https://texlyre.org
     - title: GitHub
       href: https://github.com/texlyre
-
 assignees:
-  - texlyre
-
-delay: 5
-
+  - <your-github-username>
+delay: 2000
 workflowSchedule:
   graphs: "0 0 * * *"
   responseTime: "0 23 * * *"
@@ -106,9 +95,8 @@ workflowSchedule:
   updates: "0 3 * * *"
   updateTemplate: "0 0 * * 0"
   uptime: "*/5 * * * *"
-
 commitMessages:
-  readmeContent: "$prettyUrl is $status ($responseTime ms response time)"
-  summaryContent: ":bento: Update summary in README [skip ci] [upptime]"
-  statusChange: "$emoji $prettyUrl is $status ($responseTime ms)"
+  readmeContent: ":pencil: Update summary in README [skip ci] [upptime]"
+  summaryJson: ":card_file_box: Update status summary [skip ci] [upptime]"
+  statusChange: "$EMOJI $SITE_NAME is $STATUS ($RESPONSE_CODE in $RESPONSE_TIME ms) [skip ci] [upptime]"
   graphsUpdate: ":bento: Update graphs [skip ci] [upptime]"
