@@ -10,16 +10,19 @@ sites:
     icon: https://texlyre.github.io/img/logo.svg
     slug: texlyre-org
     maxResponseTime: 5000
+ 
   - name: TeXlyre App (GitHub Pages)
     url: https://texlyre.github.io/texlyre/
     slug: texlyre-app
     maxResponseTime: 5000
+  
   - name: Templates API (GitHub Pages)
     url: https://texlyre.github.io/texlyre-templates/api/templates.json
     slug: templates-api
     expectedStatusCodes:
       - 200
     maxResponseTime: 5000
+  
   - name: Chelys Recipes (GitHub Pages)
     url: https://texlyre.github.io/chelys-recipes
     slug: chelys-recipes
@@ -34,6 +37,7 @@ sites:
     expectedStatusCodes:
       - 200
     maxResponseTime: 10000
+  
   - name: BusyTeX Endpoint (TeX Live 2026)
     url: https://texlive2026.texlyre.org/26/article.cls
     slug: texlive2026
@@ -42,19 +46,22 @@ sites:
       - 200
     maxResponseTime: 10000
 
-  - name: Repository Proxy
-    url: https://proxy.texlyre.org/?url=https%3A%2F%2Ftexlyre.org%2F
+- name: Repository Proxy
+    url: https://proxy.texlyre.org/?url=https%3A%2F%2Fgithub.com%2Frobots.txt
     slug: repository-proxy
     headers:
       - "User-Agent: Upptime (+https://texlyre.org/upptime)"
+      - "Origin: https://texlyre.org"
     expectedStatusCodes:
       - 200
+    __dangerous__body_down_if_text_missing: "User-agent"
     maxResponseTime: 10000
   
   - name: File Sync (FilePizza)
     url: https://filepizza.texlyre.org/
     slug: filepizza
     maxResponseTime: 8000
+  
   - name: File Sync Signaling (FilePizza-PeerJS)
     url: https://peerjs.texlyre.org/texlyre
     slug: filepizza-signaling
@@ -68,10 +75,6 @@ sites:
     slug: ywebrtc-signaling
     expectedStatusCodes:
       - 200
-    maxResponseTime: 8000
-  - name: Typst (external dependency)
-    url: https://typst.org/
-    slug: typst
     maxResponseTime: 8000
 
 status-website:
