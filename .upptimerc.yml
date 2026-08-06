@@ -1,11 +1,13 @@
 owner: texlyre
 repo: upptime
 user-agent: texlyre
-
+assignees:
+  - fabawi
+  
 sites:
   - name: TeXlyre Home Page (GitHub Pages redirect)
     url: https://texlyre.org/
-    icon: https://texlyre.org/assets/images/TeXlyre_notext_192.png
+    icon: https://texlyre.github.io/img/logo.svg
     slug: texlyre-org
     maxResponseTime: 5000
   - name: TeXlyre App (GitHub Pages)
@@ -48,6 +50,7 @@ sites:
     expectedStatusCodes:
       - 200
     maxResponseTime: 10000
+  
   - name: File Sync (FilePizza)
     url: https://filepizza.texlyre.org/
     slug: filepizza
@@ -70,13 +73,14 @@ sites:
     url: https://typst.org/
     slug: typst
     maxResponseTime: 8000
+
 status-website:
   baseUrl: /upptime
   name: TeXlyre Status
   introTitle: TeXlyre Status
   introMessage: Uptime and response times for texlyre.org and its hosted services.
   logoUrl: https://texlyre.org/assets/images/TeXlyre_notext_192.png
-  favicon: https://texlyre.org/favicon.ico
+  favicon: https://texlyre.github.io/img/favicon.ico
   themeColor: "#ffffff"
   navbar:
     - title: Status
@@ -85,9 +89,11 @@ status-website:
       href: https://texlyre.org
     - title: GitHub
       href: https://github.com/texlyre
+
 assignees:
   - <your-github-username>
 delay: 2000
+
 workflowSchedule:
   graphs: "0 0 * * *"
   responseTime: "0 23 * * *"
@@ -96,6 +102,7 @@ workflowSchedule:
   updates: "0 3 * * *"
   updateTemplate: "0 0 * * 0"
   uptime: "*/5 * * * *"
+
 commitMessages:
   readmeContent: ":pencil: Update summary in README [skip ci] [upptime]"
   summaryJson: ":card_file_box: Update status summary [skip ci] [upptime]"
