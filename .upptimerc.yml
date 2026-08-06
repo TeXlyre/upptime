@@ -46,7 +46,7 @@ sites:
       - 200
     maxResponseTime: 10000
 
-- name: Repository Proxy
+  - name: Repository Proxy
     url: https://proxy.texlyre.org/?url=https%3A%2F%2Fgithub.com%2Frobots.txt
     slug: repository-proxy
     headers:
