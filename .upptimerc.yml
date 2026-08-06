@@ -78,7 +78,7 @@ sites:
     maxResponseTime: 8000
 
 status-website:
-  cname: status.texlyre.org
+  cname: texlyre.org/upptime
   name: TeXlyre Status
   introTitle: TeXlyre Status
   introMessage: Uptime and response times for texlyre.org and its hosted services.
