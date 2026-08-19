@@ -1,0 +1,39 @@
+name: Status JSON
+on:
+  workflow_run:
+    workflows: ["Uptime CI"]
+    types: [completed]
+  workflow_dispatch:
+concurrency:
+  group: ${{ github.repository }}-status-json
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  status:
+    name: Generate status.json
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Generate status.json
+        run: |
+          node -e '
+            const fs = require("fs");
+            const sites = Object.fromEntries(fs.readdirSync("history")
+              .filter((file) => file.endsWith(".yml"))
+              .map((file) => [file.slice(0, -4), /^status:\s*(\S+)/m.exec(fs.readFileSync("history/" + file, "utf8"))?.[1]])
+              .filter(([, status]) => status));
+            const values = Object.values(sites);
+            const down = values.filter((status) => status === "down").length;
+            const degraded = values.filter((status) => status === "degraded").length;
+            fs.writeFileSync("status.json", JSON.stringify({ status: down ? "down" : degraded ? "degraded" : "up", down, degraded, sites }) + "\n");
+          '
+      - name: Commit status.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add status.json
+          git diff --cached --quiet && exit 0
+          git commit -m ":vertical_traffic_light: Update live status [skip ci] [upptime]"
+          git pull --rebase --quiet && git push --quiet
