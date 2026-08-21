@@ -77,18 +77,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/texlive.texlyre.org.ico",
     "slug": "texlive",
     "status": "down",
-    "uptime": "99.99%",
-    "uptimeDay": "99.90%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.99%",
+    "uptime": "98.19%",
+    "uptimeDay": "73.86%",
+    "uptimeWeek": "96.27%",
+    "uptimeMonth": "98.19%",
+    "uptimeYear": "98.19%",
     "time": 486,
     "timeDay": 325,
     "timeWeek": 491,
     "timeMonth": 486,
     "timeYear": 486,
     "dailyMinutesDown": {
-      "2026-08-21": 1
+      "2026-08-21": 376
     }
   },
   {
@@ -97,11 +97,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/texlive2026.texlyre.org.ico",
     "slug": "texlive2026",
     "status": "down",
-    "uptime": "98.94%",
-    "uptimeDay": "99.92%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "98.94%",
-    "uptimeYear": "98.94%",
+    "uptime": "97.16%",
+    "uptimeDay": "73.88%",
+    "uptimeWeek": "96.27%",
+    "uptimeMonth": "97.16%",
+    "uptimeYear": "97.16%",
     "time": 498,
     "timeDay": 337,
     "timeWeek": 489,
@@ -109,7 +109,7 @@
     "timeYear": 498,
     "dailyMinutesDown": {
       "2026-08-11": 214,
-      "2026-08-21": 1
+      "2026-08-21": 376
     }
   },
   {
@@ -117,21 +117,21 @@
     "url": "https://proxy.texlyre.org/?url=https%3A%2F%2Fgithub.com%2Frobots.txt",
     "icon": "https://icons.duckduckgo.com/ip3/proxy.texlyre.org.ico",
     "slug": "repository-proxy",
-    "status": "down",
-    "uptime": "99.04%",
-    "uptimeDay": "99.94%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "99.04%",
-    "uptimeYear": "99.04%",
-    "time": 543,
-    "timeDay": 391,
-    "timeWeek": 556,
-    "timeMonth": 543,
-    "timeYear": 543,
+    "status": "up",
+    "uptime": "97.25%",
+    "uptimeDay": "73.92%",
+    "uptimeWeek": "96.27%",
+    "uptimeMonth": "97.25%",
+    "uptimeYear": "97.25%",
+    "time": 550,
+    "timeDay": 501,
+    "timeWeek": 575,
+    "timeMonth": 550,
+    "timeYear": 550,
     "dailyMinutesDown": {
       "2026-08-06": 17,
       "2026-08-12": 177,
-      "2026-08-21": 1
+      "2026-08-21": 376
     }
   },
   {
@@ -139,19 +139,19 @@
     "url": "https://filepizza.texlyre.org/",
     "icon": "https://icons.duckduckgo.com/ip3/filepizza.texlyre.org.ico",
     "slug": "filepizza",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.95%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 527,
-    "timeDay": 371,
-    "timeWeek": 515,
-    "timeMonth": 527,
-    "timeYear": 527,
+    "status": "up",
+    "uptime": "98.19%",
+    "uptimeDay": "73.93%",
+    "uptimeWeek": "96.28%",
+    "uptimeMonth": "98.19%",
+    "uptimeYear": "98.19%",
+    "time": 531,
+    "timeDay": 453,
+    "timeWeek": 527,
+    "timeMonth": 531,
+    "timeYear": 531,
     "dailyMinutesDown": {
-      "2026-08-21": 1
+      "2026-08-21": 375
     }
   },
   {
@@ -159,19 +159,19 @@
     "url": "https://peerjs.texlyre.org/texlyre",
     "icon": "https://icons.duckduckgo.com/ip3/peerjs.texlyre.org.ico",
     "slug": "filepizza-signaling",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.97%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "up",
+    "uptime": "98.19%",
+    "uptimeDay": "73.95%",
+    "uptimeWeek": "96.28%",
+    "uptimeMonth": "98.19%",
+    "uptimeYear": "98.19%",
     "time": 589,
-    "timeDay": 397,
-    "timeWeek": 479,
+    "timeDay": 458,
+    "timeWeek": 491,
     "timeMonth": 589,
     "timeYear": 589,
     "dailyMinutesDown": {
-      "2026-08-21": 0
+      "2026-08-21": 375
     }
   },
   {
@@ -179,19 +179,19 @@
     "url": "https://ywebrtc.texlyre.org/",
     "icon": "https://icons.duckduckgo.com/ip3/ywebrtc.texlyre.org.ico",
     "slug": "ywebrtc-signaling",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "up",
+    "uptime": "98.19%",
+    "uptimeDay": "73.96%",
+    "uptimeWeek": "96.28%",
+    "uptimeMonth": "98.19%",
+    "uptimeYear": "98.19%",
     "time": 505,
-    "timeDay": 313,
-    "timeWeek": 481,
+    "timeDay": 379,
+    "timeWeek": 484,
     "timeMonth": 505,
     "timeYear": 505,
     "dailyMinutesDown": {
-      "2026-08-21": 0
+      "2026-08-21": 375
     }
   }
 ]
