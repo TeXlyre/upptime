@@ -13,7 +13,7 @@
     "time": 331,
     "timeDay": 207,
     "timeWeek": 295,
-    "timeMonth": 345,
+    "timeMonth": 347,
     "timeYear": 331,
     "dailyMinutesDown": {}
   },
@@ -76,19 +76,20 @@
     "url": "https://texlive.texlyre.org/pdftex/26/article.cls",
     "icon": "https://icons.duckduckgo.com/ip3/texlive.texlyre.org.ico",
     "slug": "texlive",
-    "status": "up",
+    "status": "down",
     "uptime": "99.69%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
+    "uptimeDay": "99.96%",
+    "uptimeWeek": "99.99%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.69%",
     "time": 581,
     "timeDay": 396,
     "timeWeek": 507,
-    "timeMonth": 546,
+    "timeMonth": 547,
     "timeYear": 581,
     "dailyMinutesDown": {
-      "2026-08-21": 493
+      "2026-08-21": 493,
+      "2026-11-25": 1
     }
   },
   {
@@ -96,20 +97,21 @@
     "url": "https://texlive2026.texlyre.org/26/article.cls",
     "icon": "https://icons.duckduckgo.com/ip3/texlive2026.texlyre.org.ico",
     "slug": "texlive2026",
-    "status": "up",
-    "uptime": "99.60%",
-    "uptimeDay": "100.00%",
+    "status": "down",
+    "uptime": "99.61%",
+    "uptimeDay": "99.98%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
-    "uptimeYear": "99.60%",
+    "uptimeYear": "99.61%",
     "time": 554,
     "timeDay": 377,
     "timeWeek": 480,
-    "timeMonth": 520,
+    "timeMonth": 516,
     "timeYear": 554,
     "dailyMinutesDown": {
       "2026-08-11": 214,
-      "2026-08-21": 409
+      "2026-08-21": 409,
+      "2026-11-25": 0
     }
   },
   {
@@ -126,7 +128,7 @@
     "time": 582,
     "timeDay": 410,
     "timeWeek": 520,
-    "timeMonth": 566,
+    "timeMonth": 567,
     "timeYear": 582,
     "dailyMinutesDown": {
       "2026-08-06": 17,
@@ -148,7 +150,7 @@
     "time": 609,
     "timeDay": 395,
     "timeWeek": 516,
-    "timeMonth": 555,
+    "timeMonth": 556,
     "timeYear": 609,
     "dailyMinutesDown": {
       "2026-08-21": 375,
@@ -169,7 +171,7 @@
     "time": 538,
     "timeDay": 484,
     "timeWeek": 514,
-    "timeMonth": 529,
+    "timeMonth": 528,
     "timeYear": 538,
     "dailyMinutesDown": {
       "2026-08-21": 375
@@ -189,7 +191,7 @@
     "time": 522,
     "timeDay": 375,
     "timeWeek": 451,
-    "timeMonth": 520,
+    "timeMonth": 518,
     "timeYear": 522,
     "dailyMinutesDown": {
       "2026-08-21": 375
